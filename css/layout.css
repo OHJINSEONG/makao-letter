@@ -1,0 +1,157 @@
+header{
+    display: flex;
+    height: 85px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    width: 770px;
+    align-items: center;
+    justify-content: center;
+}
+
+aside{
+    display: flex;
+    
+    justify-content: center;
+    height: 230px;
+    width: 100%;   
+}
+
+article{
+    display: flex;
+
+    height: 100px;
+    width: 100%;
+    background-color: rgb(68,147,251);
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+a{
+    display: flex;
+    height: 300px;
+    width: auto;
+    padding: 10px;
+    font-size: 12px; 
+
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    display: grid;
+    max-width: 920px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    grid-template: repeat(3,1fr) / repeat(4,1fr);
+}
+
+input{
+    height: 40px;
+    width: 120px;
+    background-color: rgb(68,147,251);
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 840px){
+    section{
+        display: grid;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+        grid-template: repeat(4,1fr) / repeat(3,1fr);
+    }
+
+    header div{
+        display: none;
+    }
+}
+
+@media (max-width: 720px){
+    section{
+        display: grid;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+        grid-template: repeat(6,1fr) / repeat(2,1fr);
+    }
+
+    header div{
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    section{
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+        flex-direction: column;
+    }
+
+    a{
+        display: flex;
+        height: 500px;
+        width: auto;
+        font-size: 20px; 
+    
+        flex-direction: column;
+    }
+
+    article{
+        display: flex;
+    
+        height: 150px;
+        width: 100%;
+        background-color: rgb(68,147,251);
+    
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside{
+        display: flex;
+        
+        justify-content: center;
+        height: 200px;
+        width: 100%;   
+    }
+
+    header div{
+        display: none;
+    }
+
+    input{
+        height: 60px;
+        width: 180px;
+        background-color: rgb(68,147,251);
+        border-radius: 40px;
+        color: white;
+        font-size: 30px;
+    }
+}
+
+a div div{
+    display: flex;
+    flex-direction: row;
+}
+
+#button{
+    padding-top: 50px;
+    display: flex;
+    height: 250px;
+}
